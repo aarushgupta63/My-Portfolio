@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Ubuntu Medium ;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: red;
+}
+#main{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: ;
+    width: 100%;
+    /* background-color: yellow; */
+    position: absolute;
+    top: 2vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 2vh  5vw;
+
+}
+nav h4{
+    font-size: 3vh;
+    letter-spacing: .2vw;
+    
+}
+ul a{
+    color: white;
+    text-decoration: none;
+    margin: 0vh 1.3vw;
+    font-size: 2.5vh;
+    /* color: black; */
+    font-weight: 100;
+ 
+}
+.mainhead{
+    color: white;
+     position: absolute; 
+    /* background-color: red;   */
+    top: 53%;
+    left: 50%;
+    transform: translate( -50% , -50%); 
+
+}
+.mainhead h3{
+    font-size: 3vh;
+    font-weight: 100;
+}
+.mainhead h1{
+    font-size: 7vh;
+    font-weight: 200;
+
+}
+.aboutme{
+    color: white;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate( -50% , -50%); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a{
+   /* padding: 2vh 3vw; */
+   font-size: 3vh;
+   padding: 0vh .5vw;
+   text-decoration: none;
+   color: white;
+}
+
+
+
+
+
+
+
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Web devloper";
+    color: #ff7f50;
+    animation: words 9s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    /* background-color: #2f3542; */
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+  
+  
+    0%,50%{
+        content: "Web Designer";
+    }
+    51%,100%{
+        content: "Devloper";
+    }
+ 
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
